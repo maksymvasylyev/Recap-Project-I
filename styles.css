@@ -5,6 +5,11 @@
     
 }
 
+body{
+    margin:1px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
 .header {
     margin: 0 auto 0 auto;
     padding: 20px;
@@ -57,7 +62,7 @@ section{
 
 }
 
-li {
+.ulQ1 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     border: 1px solid black;
@@ -66,4 +71,19 @@ li {
     background-color: grey;
     list-style-type:none;
 
+}
+
+.ulFooter {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style-type:none;
+}
+
+li :hover {
+    background-color: grey;
 }
