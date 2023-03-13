@@ -5,13 +5,20 @@
     
 }
 
+body{
+    margin:1px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
 .header {
+    font-size: 2rem;
     margin: 0 auto 0 auto;
     padding: 20px;
     border: 3px solid black;
     text-align: center;
     width: 100%;
-    border-radius: 10px;
+    border-bottom-radius: 10px;
+    background-color: yellow;
 }
 
 section{
@@ -50,6 +57,10 @@ section{
   font-size: 16px;
 }
 
+.buttonQ1:hover {
+    background-color: yellow;
+}
+
 .ulQ1 {
     display: flex;
     justify-content: flex-start;
@@ -57,13 +68,43 @@ section{
 
 }
 
-li {
+.ulQ1 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     border: 1px solid black;
     border-radius: 10%;
     margin: 40px 5px 0 0;
-    background-color: grey;
+    background-color: yellow;
     list-style-type:none;
 
+}
+
+footer {
+    background-color: yellow;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+}
+
+.ulFooter {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style-type:none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: white;
 }
