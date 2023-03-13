@@ -41,6 +41,8 @@ section{
     right: 10px;
 }
 
+
+
 .pQ1 {
     padding: 40px 50px 50px 10px;
     font-size: 3rem;
@@ -109,4 +111,19 @@ a {
 
 a:hover {
     background-color: white;
+}
+
+.home {
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.home {
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.bookmarks {
+    background-color: pink;
+    border-radius: 10px;
 }
