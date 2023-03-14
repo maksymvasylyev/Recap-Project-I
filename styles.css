@@ -37,7 +37,7 @@ section{
     height: 70px;
     border-radius: 20px;
     position:absolute;
-    top: -10px;
+    top: -15px;
     right: 10px;
 }
 
@@ -123,6 +123,16 @@ a:hover {
     border-radius: 10px;
 }
 
+.bookmarkButton {
+    background-color: Transparent;
+    border: none;
+    
+}
+
 .bookmarkButton:hover {
-    background-color: black;
+    
+}
+
+.dark {
+    background-color: pink;
 }
