@@ -32,18 +32,29 @@ section{
     width: 80%;
     border-radius: 10px;
 }
-.bookmark {
+.bookmarkImage1 {
     width: 70px;
     height: 70px;
     border-radius: 20px;
     position:absolute;
-    top: -15px;
-    right: 10px;
+    top: 10px;
+    right: 15px;
 }
 
-
+.bookmarkImage2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    position:absolute;
+    top: 10px;
+    right: 15px;
+}
 
 .pQ1 {
+    padding: 40px 50px 50px 10px;
+    font-size: 3rem;
+}
+.pQ2 {
     padding: 40px 50px 50px 10px;
     font-size: 3rem;
 }
@@ -60,7 +71,23 @@ section{
   font-size: 16px;
 }
 
+.buttonQ2 {
+    background-color: transparent;
+  border: solid;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 .buttonQ1:hover {
+    background-color: yellow;
+}
+
+.buttonQ2:hover {
     background-color: yellow;
 }
 
@@ -68,16 +95,34 @@ section{
     display: flex;
     justify-content: flex-start;
     position: absolute;
-    
     bottom: 10px;
-
     align-items: flex-end;
     padding: 10px;
     margin-top: 10px;
+}
 
+.ulQ2 {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    align-items: flex-end;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .ulQ1 li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 40px 5px 0 0;
+    background-color: yellow;
+    list-style-type:none;
+
+}
+
+.ulQ2 li {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     border: 1px solid black;
@@ -116,11 +161,14 @@ a {
 
 a:hover {
     background-color: white;
+    border-radius: 10px;
+    padding-top: 50px;
 }
 
 .home {
     background-color: pink;
     border-radius: 10px;
+    padding-top: 50px;
 }
 
 .bookmarks {
@@ -128,14 +176,52 @@ a:hover {
     border-radius: 10px;
 }
 
-.bookmarkButton {
-    background-color: Transparent;
+.bookmarkButton1 {
+    background-color: transparent;
     border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    position:absolute;
+    top: -20px;
+    right: 10px;
+    z-index: 1;
     
 }
 
+.bookmarkButton1:hover {
+    background-color: yellow;
+    border: solid;
+    padding: 50px;
+    z-index: -1;
+}
 
+.bookmarkButton2 {
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    position:absolute;
+    top: -20px;
+    right: 10px;
+    padding: 50px;
+    z-index: 1;
+    
+}
+
+.bookmarkButton2:hover {
+    background-color: yellow;
+    border: solid;
+    padding: 50px;
+    z-index: -1;
+}
 
 .dark {
     background-color: pink;
+}
+
+.bottomLogo {
+    height: 70px;
+    width: 70px;
 }
