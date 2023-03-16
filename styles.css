@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Copperplate", 'Times New Roman', Times, serif
     
 }
 
@@ -228,7 +229,7 @@ a:hover {
 
 .pAnswer {
     display: none;
-
+    
 }
 
  .answer1, .answer2 {
@@ -237,7 +238,6 @@ a:hover {
     text-align: center;
     display: none;
     padding: 10px;
-    margin-top: auto 50px auto 0;
     border: 3px solid yellow;
     border-radius: 10px;
     position: absolute;
