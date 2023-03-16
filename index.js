@@ -32,11 +32,11 @@ buttonQ2.addEventListener("click", () => {
     
 });
 
-// buttonQ1.addEventListener("click", () => {
-//     answer1.innerHTML="";
-//     buttonQ1.innerHTML="Show answer";
-// });
+
+bookmarkButton1.addEventListener("click", () => {
+    bookmarkButton1.innerHTML='<img id="bookmark1" src="img/bookmarkChecked.png" alt="Question1" class="bookmarkImage1"/>'
+});
 
 bookmarkButton2.addEventListener("click", () => {
-    h1Element.classList.add("dark")
+    bookmarkButton2.innerHTML='<img id="bookmark2" src="img/bookmarkChecked.png" alt="Question2" class="bookmarkImage2"/>'
 });

@@ -226,16 +226,32 @@ a:hover {
     width: 70px;
 }
 
-
-.pAnswer, .answer1 {
+.pAnswer {
     display: none;
+
+}
+
+ .answer1, .answer2 {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    display: none;
+    padding: 10px;
+    margin-top: auto 50px auto 0;
+    border: 3px solid yellow;
+    border-radius: 10px;
+    position: absolute;
+    right: 25%;
+    
 }
 
 .show {
     display: block;
+    
     
 }
 
 .hide {
     display: none;
 }
+
