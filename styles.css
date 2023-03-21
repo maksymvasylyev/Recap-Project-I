@@ -255,3 +255,17 @@ a:hover {
     display: none;
 }
 
+.favourite {
+    background-color: pink;
+    border-radius: 10px;
+    padding-top: 50px;
+
+}
+
+.sectionHide {
+    display: none;
+}
+
+.sectionShow {
+    display: block;
+}

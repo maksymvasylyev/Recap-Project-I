@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <h1> Quiz App</h1>
+        <h1 data-js="h1Element"> Quiz App</h1>
     </header>
-
+    
     <main>
-        <section class="Q1">
-            <img id="bookmark1" src="img/pexels-miguel-á-padriñán-1111314.jpeg" alt="Question1" class="bookmark">
+        <section class="Q1 sectionHide" data-js="section1">
+            
+            <button type="button" class="bookmarkButton1" data-js="bookmarkButton1">
+                <img id="bookmark1" src="img/bookmark.png" alt="Question1" class="bookmarkImage1">
+            </button>
             <p class="pQ1">What the property flips the axes in flexbox?</p>
-            <button type="button" class="buttonQ1">Show answer</button>
+            <button type="button" class="buttonQ1" data-js="buttonQ1"> <p data-js="showAnswer">Show Answer</p> <p class="pAnswer" data-js="pAnswer">Hide Answer</p></button>
+            
+            <div>
+                <p class="answer1" title="answer" data-js="answer1">Think by yourself</p>
+            </div>
             <ul class="ulQ1">
                 <li>#html</li>
                 <li>#flexbox</li>
                 <li>#css</li>
             </ul>
         </section>
-        <section class="Q1">
-            <img src="img/pexels-miguel-á-padriñán-1111314.jpeg" alt="Question1" class="bookmark">
-            <p class="pQ1">Lorem Ipsum. There is no one who loves pain itself.</p>
-            <button type="button" class="buttonQ1">Show answer</button>
-            <ul class="ulQ1">
+        <section class="Q2">
+            <button type="button" class="bookmarkButton2" data-js="bookmarkButton2"> 
+                <img id="bookmark2" src="img/bookmark.png" alt="Question2" class="bookmarkImage2">
+            </button>   
+            <p class="pQ2">Lorem Ipsum. There is no one who loves pain itself.</p>
+            <button type="button" class="buttonQ2" data-js="buttonQ2"><p data-js="showAnswer2">Show Answer</p> <p class="pAnswer" data-js="pAnswer2">Hide Answer</p></button>
+            <div>
+                <p class="answer2" title="answer" data-js="answer2">Just google</p>
+            </div>
+            <ul class="ulQ2">
                 <li>#html</li>
                 <li>#flexbox</li>
                 <li>#css</li>
@@ -38,9 +51,15 @@
     <footer>
 <nav>
     <ul class="ulFooter">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#bookmark1" class="bookmarks">BOOKMARKS</a></li>
-        <li><a href="#top">PROFILE</a></li>
+        <li><a href="index.html">
+            <img src="img/home.png" alt="Home" class="bottomLogo">
+        </a></li>
+        <li><a href="bookmarks.html" class="favourite">
+            <img src="img/bookmarkChecked.png" alt="Home" class="bottomLogo">
+        </a></li>
+        <li><a href="#top">
+            <img src="img/profile.png" alt="Home" class="bottomLogo">
+        </a></li>
     </ul>
 </nav>
     </footer>
