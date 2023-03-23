@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="form.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 data-js="h1Element"> Quiz App</h1>
+    </header>
+    <section class="mainForm">
+        <form class="form" data-js="form">
+            <div>  
+                <label for="question">Your Question</label>
+                <textarea name="question" id="question" cols="30" rows="10" data-js="question"></textarea> 
+                <p class="pFormQuestion" data-js="pFormAnswer"></p>
+            </div>
+          
+            <div>
+                <label for="answer">Your Answer</label>
+                <textarea name="answer" id="answer" cols="30" rows="10" data-js="answer"></textarea> 
+                <p class="pFormAnswer" data-js="pFormAnswer"></p>
+            </div>
+           
+                <div>
+                    <label for="tag">Tag</label>
+                    <input type="text" name="tag" id="tag" data-js="tag">
+                    <p class="formTag" data-js="formTag"></p>
+                </div>
+           
+           <button class="buttonQ1" data-js="buttonForm">Submit</button>
+           
+        </form>
+        <ul data-js="cardContainer"></ul>
+            
+    </section>
+
+    <footer>
+        <nav>
+            <ul class="ulFooter">
+                <li><a href="#top">
+                    <img src="img/home.png" alt="Home" class="bottomLogo">
+                </a></li>
+                <li><a href="bookmarks.html">
+                    <img src="img/bookmarkChecked.png" alt="Bookmark" class="bottomLogo">
+                </a></li>
+                <li><a href="form.html" class="home">
+                    <img src="img/add.png" alt="Form" class="bottomLogo addFormLogo">
+                </a></li>
+                <li><a href="profile.html">
+                    <img src="img/profile.png" alt="Profile" class="bottomLogo">
+                </a></li>
+            </ul>
+        </nav>
+            </footer>
+
+</body>
+</html>

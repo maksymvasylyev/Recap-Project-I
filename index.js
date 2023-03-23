@@ -50,3 +50,4 @@ bookmarkButton1.addEventListener("click", () => {
 bookmarkButton2.addEventListener("click", () => {
     bookmarkButton2.innerHTML='<img id="bookmark2" src="img/bookmarkChecked.png" alt="Question2" class="bookmarkImage2"/>'
 });
+
