@@ -270,3 +270,11 @@ a:hover {
 .sectionShow {
     display: block;
 }
+
+.bookmarkShow {
+    display: flex;
+}
+
+.bookmarkHide {
+    display: none;
+}

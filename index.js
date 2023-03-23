@@ -16,6 +16,9 @@ const showAnswer2 = document.querySelector('[data-js="showAnswer2"]')
 
 const section1 = document.querySelector('[data-js="section1"]')
 
+const bookmarkPicture1 = document.querySelector('[data-js="bookmarkPicture1"]')
+const bookmarkPicture2 = document.querySelector('[data-js="bookmarkPicture2"]')
+
 buttonQ1.addEventListener("click", () => {
     answer1.classList.toggle("show");
     // answer1.setAttribute(display, flex);
@@ -37,8 +40,11 @@ buttonQ2.addEventListener("click", () => {
 
 bookmarkButton1.addEventListener("click", () => {
  
-    bookmarkButton1.innerHTML='<img id="bookmark1" src="img/bookmarkChecked.png" alt="Question1" class="bookmarkImage1"/>';
-    section1.classList.add("sectionShow")
+    bookmarkPicture1.classList.toggle("bookmarkHide");
+    bookmarkPicture2.classList.toggle("bookmarkShow");
+
+    // bookmarkButton1.innerHTML='<img id="bookmark1" src="img/bookmarkChecked.png" alt="Question1" class="bookmarkImage1"/>';
+    // section1.classList.add("sectionShow")
 });
 
 bookmarkButton2.addEventListener("click", () => {
