@@ -12,17 +12,18 @@
     <header class="header">
         <h1 data-js="h1Element"> Quiz App</h1>
     </header>
+    <main>
     <section class="mainForm">
         <form class="form" data-js="form">
             <div>  
                 <label for="question">Your Question</label>
-                <textarea name="question" id="question" cols="30" rows="10" data-js="question"></textarea> 
-                <p class="pFormQuestion" data-js="pFormAnswer"></p>
+                <textarea name="question" id="question" cols="30" rows="10" data-js="question" maxlength="50"></textarea> 
+                <p class="pFormQuestion" data-js="pFormQuestion"></p>
             </div>
           
             <div>
                 <label for="answer">Your Answer</label>
-                <textarea name="answer" id="answer" cols="30" rows="10" data-js="answer"></textarea> 
+                <textarea name="answer" id="answer" cols="30" rows="10" data-js="answer" maxlength="50"></textarea> 
                 <p class="pFormAnswer" data-js="pFormAnswer"></p>
             </div>
            
@@ -33,22 +34,22 @@
                 </div>
            
            <button class="buttonQ1" data-js="buttonForm">Submit</button>
-           
+           <p class="pList"><ul data-js="cardContainer"></ul></p>
         </form>
-        <ul data-js="cardContainer"></ul>
+        
             
     </section>
-
+    <main>
     <footer>
         <nav>
             <ul class="ulFooter">
-                <li><a href="#top">
+                <li><a href="index.html">
                     <img src="img/home.png" alt="Home" class="bottomLogo">
                 </a></li>
                 <li><a href="bookmarks.html">
                     <img src="img/bookmarkChecked.png" alt="Bookmark" class="bottomLogo">
                 </a></li>
-                <li><a href="form.html" class="home">
+                <li><a href="#top" class="home">
                     <img src="img/add.png" alt="Form" class="bottomLogo addFormLogo">
                 </a></li>
                 <li><a href="profile.html">

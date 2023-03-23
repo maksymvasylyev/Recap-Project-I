@@ -6,7 +6,7 @@ const answerInput = document.querySelector('[data-js="answer"]')
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const newCard = document.createElement("li");
-    newCard.classList.add("card");
+    newCard.classList.add("pQ1");
     
     
     newCard.innerHTML = `
@@ -16,4 +16,28 @@ form.addEventListener("submit", (event) => {
     cardContainer.append(newCard);
 
 
+    form.reset();
+    questionInput.focus();
+
 });
+
+const outputQuestion = document.querySelector('[data-js="pFormQuestion"]')
+const outputAnswer = document.querySelector('[data-js="pFormAnswer"]')
+
+questionInput.addEventListener("input", (event) => {
+    const textInput = event.target.value;
+    const inputLength = textInput.length;
+    const symbolsLeft = questionInput.maxLength-inputLength;
+    outputQuestion.innerHTML = `You entered ${inputLength} symbols and have ${symbolsLeft} left
+    `;
+    
+})
+
+answerInput.addEventListener("input", (event) => {
+    const textInput = event.target.value;
+    const inputLength = textInput.length;
+    const symbolsLeft = answerInput.maxLength-inputLength;
+    outputAnswer.innerHTML = `You entered ${inputLength} symbols and have ${symbolsLeft} left
+    `;
+    
+})
