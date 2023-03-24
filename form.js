@@ -6,7 +6,7 @@ const answerInput = document.querySelector('[data-js="answer"]')
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const newCard = document.createElement("li");
-    newCard.classList.add("pQ1");
+    newCard.classList.add("card");
     
     
     newCard.innerHTML = `
