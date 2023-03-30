@@ -89,3 +89,7 @@ answerInput.addEventListener("input", (event) => {
 });
 
 //button show answer function
+
+const formData = new FormData(event.target);
+const data = Object.fromEntries(formData);
+console.log(data.question);

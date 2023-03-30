@@ -70,6 +70,7 @@ section {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  transition: 0.4s ease;
 }
 
 .buttonQ2 {
@@ -86,6 +87,10 @@ section {
 
 .buttonQ1:hover {
   background-color: yellow;
+}
+
+.buttonQ1:active {
+  transform: scale(0.5);
 }
 
 .buttonQ2:hover {
